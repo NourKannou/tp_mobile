@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/playfair_display"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="Mesure de niveau de glycémie"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/VotreAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Votre age :"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/sauman"
+        android:padding="16dp"
+        android:shadowColor="#000000"
+        android:shadowDx="5"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textAllCaps="true"
+        android:textStyle="bold|italic"
+        android:fontFamily="@font/playfair_display"
+        android:textBackground="@drawable/text_background"
+        />
+
+
+    <SeekBar
+        android:id="@+id/sbAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:max="120"
+
+        android:progressTint="@color/sauman"
+        android:progressHeight="4dp"
+
+        android:tickMarkTint="@color/sauman"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+
+        android:thumbOffset="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Est-ce que vous jeunez? "
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/sauman"
+        android:padding="16dp"
+        android:shadowColor="#000000"
+        android:shadowDx="5"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textAllCaps="true"
+        android:textStyle="bold|italic"
+        android:fontFamily="@font/playfair_display"
+        android:textBackground="@drawable/text_background"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rbtOui"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="YES"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+        <RadioButton
+            android:id="@+id/rbtNon"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="NON"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/vm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Valeur mesurée (en mmol/l)"
+        android:hintTextColor="@color/hint_color"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="numberDecimal"
+        />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/newGray"
+        android:text="CONSULTER"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAllCaps="true"
+        android:onClick="calculer"
+        />
+    <TextView
+        android:id="@+id/tvRésultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:text="..." />
+
+
+
+</LinearLayout>
