@@ -14,7 +14,8 @@ import android.widget.Toast;
 
 import com.example.glycemie.R;
 
-import controller.controller;
+import controller.Controller;
+
 
 
 public class MainActivity extends AppCompatActivity
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity
     private TextView tvAge,tvRésultat;
     private RadioButton rbOui,rbNon;
     private SeekBar sbAge;
-    private controller.controller.Controller controller=new controller.controller.Controller();
+    Controller controller= Controller.getinstance();
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
