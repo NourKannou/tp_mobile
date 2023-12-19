@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Glycemie</string>
+    <string name="email_hint">Enter your Email</string>
+    <string name="login_button">Login\n</string>
+    <string name="password_hint">Enter Password</string>
 </resources>

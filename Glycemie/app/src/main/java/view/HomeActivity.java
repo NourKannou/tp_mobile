@@ -14,9 +14,11 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Intent intent1 = new Intent(this , MainActivity.class );
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Intent intent1 = new Intent(this , MainActivity.class );
+
         btn1 = findViewById(R.id.btn1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
